@@ -1,8 +1,8 @@
 File Path Traversal — Simple Case (PortSwigger Web Security Academy)
 
 Lab: [File path traversal, simple case](https://portswigger.net/web-security/file-path-traversal/lab-simple)
-Difficulty:** Apprentice
-Status:** Solved
+Difficulty: Apprentice
+Status: Solved
 Tools used:** Burp Suite Community Edition (Proxy, Repeater)
 
 Objective
@@ -24,7 +24,7 @@ GET /image?filename=42.jpg HTTP/2
 Host: <lab-id>.web-security-academy.net
 ```
 
-[Screenshot: original request + response — image loads normally]*
+[Screenshot: original request + response — image loads normally
 
 2\. Modify the request
 
@@ -39,7 +39,7 @@ Host: <lab-id>.web-security-academy.net
 
 The response returned the raw contents of `/etc/passwd` as plain text instead of an image, confirming the traversal worked.
 
-[Screenshot: modified request + response — /etc/passwd contents]*
+[Screenshot: modified request + response — /etc/passwd contents]
 
 4\. Confirm
 

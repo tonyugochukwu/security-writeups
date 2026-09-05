@@ -29,7 +29,7 @@ Replaced the URL path with the disclosed admin panel path and loaded it directly
 3. Delete the user
 Used the admin panel's delete function to remove `carlos`. The lab immediately updated to "Solved."
 
-   screen
+      ![robots.txt content](02-deleted-user.png)
 
 
 Root Cause

@@ -23,13 +23,13 @@ Navigated to `<lab-url>/robots.txt` and found a `Disallow` entry pointing to the
 2. Access the disclosed path directly
 Replaced the URL path with the disclosed admin panel path and loaded it directly in the browser. The admin panel loaded fully, with no login prompt — `carlos` was visible in the user list, and the lab was still marked "Not solved."
 
-[Screenshot: ]
+![robots.txt content](02-administration-panel.png)
 
 
 3. Delete the user
 Used the admin panel's delete function to remove `carlos`. The lab immediately updated to "Solved."
 
-[Screenshot: ]
+   ![robots.txt content](02-administration-panel.png)
 
 
 Root Cause

@@ -18,7 +18,7 @@ It can't actually block access to anything; it only lists paths. So checking it 
 1. Check robots.txt
 Navigated to `<lab-url>/robots.txt` and found a `Disallow` entry pointing to the admin panel's path.
 
-[Screenshot: ]
+[Screenshot: 02-robot.txt.png]
 
 2. Access the disclosed path directly
 Replaced the URL path with the disclosed admin panel path and loaded it directly in the browser. The admin panel loaded fully, with no login prompt — `carlos` was visible in the user list, and the lab was still marked "Not solved."

@@ -1,4 +1,3 @@
-![Uploading Screenshot 2026-09-04 233220.png…]()
 Unprotected Admin Functionality — Disclosed via robots.txt (PortSwigger Web Security Academy)
 
 Lab: [Unprotected admin functionality](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality)
@@ -19,18 +18,18 @@ It can't actually block access to anything; it only lists paths. So checking it 
 1. Check robots.txt
 Navigated to `<lab-url>/robots.txt` and found a `Disallow` entry pointing to the admin panel's path.
 
-[Screenshot: ![Uploading Screenshot 2026-09-04 233220.png…]()]
+[Screenshot: ]
 
 2. Access the disclosed path directly
 Replaced the URL path with the disclosed admin panel path and loaded it directly in the browser. The admin panel loaded fully, with no login prompt — `carlos` was visible in the user list, and the lab was still marked "Not solved."
 
-[Screenshot: ![Uploading Screenshot 2026-09-04 233402.png…]()]
+[Screenshot: ]
 
 
 3. Delete the user
 Used the admin panel's delete function to remove `carlos`. The lab immediately updated to "Solved."
 
-[Screenshot: ![Uploading Screenshot 2026-09-04 233442.png…]()]
+[Screenshot: ]
 
 
 Root Cause

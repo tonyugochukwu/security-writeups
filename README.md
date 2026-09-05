@@ -12,8 +12,9 @@ Tools Used
 - Burp Suite (Community Edition)
 - Manual testing / OWASP Top 10 methodology
 
-Writeups
-
 | # | Vulnerability | Source | Link |
-| 01 | Path Traversal | PortSwigger Web Security Academy | [File Path Traversal – Simple Case](./01-file-path-traversal-simple-case.md)
+|---|---|---|---|
+| 01 | Path Traversal | PortSwigger Web Security Academy | [File Path Traversal – Simple Case](./01-file-path-traversal-simple-case.md) |
+| 02 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – robots.txt Disclosure](./02-unprotected-admin-panel-robots-txt.md) |
+| 03 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – JS Disclosure](./03-unprotected-admin-panel-js-disclosure.md) |
 

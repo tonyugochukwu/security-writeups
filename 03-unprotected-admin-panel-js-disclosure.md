@@ -17,17 +17,18 @@ JavaScript and HTML both run and render entirely in the browser, which means eve
  1. Inspect the page source
 Reviewed the lab home page's raw HTML/JavaScript using the browser's DevTools. Found an `<a href="...">` link pointing to the admin panel's path. This link was present in the code but not rendered as a visible, clickable element on the page itself.
 
-[Screenshot: source code showing the hidden href with the admin path]
+![robots.txt content](Screenshot-2026-09-05-021809.png)
 
  2. Navigate to the disclosed path
 Copied the disclosed path from the `href` and loaded it directly in a new browser tab. The admin panel loaded fully, with no login prompt — `carlos` was still listed, and the lab was still marked "Not solved."
 
-[Screenshot: admin panel loaded via the URL, carlos still present]
+![robots.txt content](Screenshot-2026-09-05-002540.png)
 
  3. Delete the user
 Used the admin panel's delete function to remove `carlos`. The lab updated to "Solved."
 
-[Screenshot: carlos deleted, lab marked Solved]
+![robots.txt content](Screenshot-2026-09-05-002557.png)
+
 
  Root Cause
 The admin panel's link existed in the page's HTML but was hidden from normal view rather than rendered visibly. The developers relied on the URL being unpredictable and not visibly linked as the only barrier to entry — but all client-side code, whether visually rendered or not, is fully readable by anyone who inspects the page. As with the `robots.txt`-disclosed version of this vulnerability, there was still no actual authentication or authorization check on the admin panel itself once its URL was known — the "unpredictable URL" was the only thing standing in the way, and it wasn't actually unpredictable to anyone willing to look at the source.

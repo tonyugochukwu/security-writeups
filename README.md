@@ -17,4 +17,5 @@ Tools Used
 | 01 | Path Traversal | PortSwigger Web Security Academy | [File Path Traversal – Simple Case](./01-file-path-traversal-simple-case.md) |
 | 02 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – robots.txt Disclosure](./02-unprotected-admin-panel-robots-txt.md) |
 | 03 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – JS Disclosure](./03-unprotected-admin-panel-js-disclosure.md) |
+| 04 | Broken Access Control | PortSwigger Web Security Academy | [Broken Access Control – Forgeable Cookie](./04-broken-access-control-forgeable-cookie.md) |
 

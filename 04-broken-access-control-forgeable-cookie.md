@@ -1,4 +1,4 @@
- Broken Access Control — User Role Controlled by Forgeable Cookie (PortSwigger Web Security Academy)
+Broken Access Control — User Role Controlled by Forgeable Cookie (PortSwigger Web Security Academy)
 
 Lab: [User role controlled by request parameter]
 (https://portswigger.net/web-security/learning-paths/server-side-vulnerabilities-apprentice/access-control-apprentice/access-control/lab-user-role-controlled-by-request-parameter)
@@ -20,7 +20,7 @@ Steps
  1. Confirm no access as a normal user
 Attempted to visit `/admin` without being logged in as an admin. Access was denied.
 
-[Screenshot: admin access denied]
+   ![Admin access denied](Screenshot 2026-09-22 233126.png)
 
  2. Log in and intercept the response
 Logged in with `wiener:peter`. Using Burp Proxy with response interception enabled, intercepted the server's response to the login request and found:
@@ -32,12 +32,12 @@ This confirmed the server communicates admin status to the browser via a plain, 
  3. Modify the cookie
 Edited the intercepted response, changing the cookie value from `Admin=false` to `Admin=true`, then forwarded it to the browser.
 
-[Screenshot: Burp response interception, Admin=false edited to Admin=true]
+   ![Admin cookie changed from false to true](Screenshot 2026-09-22 233906.png)
 
  4. Access the admin panel and delete the user
 With the browser now holding `Admin=true`, loaded `/admin` — access was granted. Deleted the user `carlos` successfully.
 
-[Screenshot: carlos deleted, lab marked Solved]
+   ![Carlos deleted, lab solved](Screenshot 2026-09-22 234306.png)
 
  Root Cause
 The server determined whether a user was an admin by reading a cookie (`Admin=true`/`false`) that the client controls. Cookies are stored and sent by the browser, and anyone can intercept and modify them before they reach the server. By simply changing the cookie's value, it was possible to self-assign admin privileges — the server accepted this claim without independently verifying it against the user's actual role (e.g. checked server-side, tied to the authenticated session).

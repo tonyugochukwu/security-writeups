@@ -20,7 +20,7 @@ Steps
  1. Confirm no access as a normal user
 Attempted to visit `/admin` without being logged in as an admin. Access was denied.
 
-   ![Admin access denied](Screenshot 2026-09-22 233126.png)
+   ![Admin access denied](233126.png)
 
  2. Log in and intercept the response
 Logged in with `wiener:peter`. Using Burp Proxy with response interception enabled, intercepted the server's response to the login request and found:

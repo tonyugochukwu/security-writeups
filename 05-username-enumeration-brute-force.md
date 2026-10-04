@@ -43,7 +43,7 @@ returned `302` (a redirect) — the signature of a successful login, since the s
 3. Log in and confirm
 Logged in using `americas` and the identified password. Lab marked as solved.
 
-[Screenshot: lab marked Solved]
+![description](Screenshot-2026-09-24-075735.png)
 
 Root Cause
 This vulnerability had two separate, compounding causes:

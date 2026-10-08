@@ -23,12 +23,12 @@ Logged out fully (clearing the session) to ensure no leftover access remained. B
  3. Navigate directly to the account page instead of completing 2FA
 Instead of submitting a 2FA code, manually navigated the browser directly to `/my-account` in the same session.
 
-![](Screenshot-2026-09-24-230905.png)
+![](shots/Screenshot-2026-09-24-230905.png)
 
  4. Confirm access
 The account page loaded successfully as `carlos` — full access was granted without a valid 2FA code ever being submitted. Lab marked as solved.
 
-![](Screenshot-2026-09-24-231007.png)
+![](shots/Screenshot-2026-09-24-231007.png)
 
  Root Cause
 The server granted a fully authenticated, privileged session as soon as the username and password were verified — before the 2FA code was checked. The 2FA code entry page was presented as an additional step in the login flow, but the session created after the first factor was already valid enough to access protected pages directly. As a result, the 2FA check could be skipped entirely simply by navigating to a protected page instead of completing the 2FA page — the server never verified, at the point of granting account access, whether the 2FA step had actually been completed.

@@ -17,17 +17,17 @@ JavaScript and HTML both run and render entirely in the browser, which means eve
  1. Inspect the page source
 Reviewed the lab home page's raw HTML/JavaScript using the browser's DevTools. Found an `<a href="...">` link pointing to the admin panel's path. This link was present in the code but not rendered as a visible, clickable element on the page itself.
 
-![robots.txt content](Screenshot-2026-09-05-021809.png)
+![robots.txt content](shots/Screenshot-2026-09-05-021809.png)
 
  2. Navigate to the disclosed path
 Copied the disclosed path from the `href` and loaded it directly in a new browser tab. The admin panel loaded fully, with no login prompt — `carlos` was still listed, and the lab was still marked "Not solved."
 
-![robots.txt content](Screenshot-2026-09-05-002540.png)
+![robots.txt content](shots/Screenshot-2026-09-05-002540.png)
 
  3. Delete the user
 Used the admin panel's delete function to remove `carlos`. The lab updated to "Solved."
 
-![robots.txt content](Screenshot-2026-09-05-002557.png)
+![robots.txt content](shots/Screenshot-2026-09-05-002557.png)
 
 
  Root Cause

@@ -24,7 +24,7 @@ GET /image?filename=42.jpg HTTP/2
 Host: <lab-id>.web-security-academy.net
 ```
 
-   ![Original request and response](01-original-request.png)
+   ![Original request and response](shots/01-original-request.png)
 
 2\. Modify the request
 
@@ -39,7 +39,7 @@ Host: <lab-id>.web-security-academy.net
 
 The response returned the raw contents of `/etc/passwd` as plain text instead of an image, confirming the traversal worked.
 
-   ![Payload request and response](01-payload-response.png)
+   ![Payload request and response](shots/01-payload-response.png)
 
 4\. Confirm
 

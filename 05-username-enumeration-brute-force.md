@@ -38,12 +38,12 @@ lab's candidate password wordlist and ran the attack again, keeping `username=am
 Sorted the results by Status code. Every request returned `200` (login page re-rendered with an error) except one, which 
 returned `302` (a redirect) — the signature of a successful login, since the server redirects the user to their account page afterward.
 
-![description](Screenshot-2026-09-24-090428.png)
+![description](shots/Screenshot-2026-09-24-090428.png)
 
 3. Log in and confirm
 Logged in using `americas` and the identified password. Lab marked as solved.
 
-![description](Screenshot-2026-09-24-075735.png)
+![description](shots/Screenshot-2026-09-24-075735.png)
 
 Root Cause
 This vulnerability had two separate, compounding causes:

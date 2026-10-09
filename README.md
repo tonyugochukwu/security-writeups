@@ -14,10 +14,10 @@ Tools Used
 
 | # | Vulnerability | Source | Link |
 |---|---|---|---|
-| 01 | Path Traversal | PortSwigger Web Security Academy | [File Path Traversal – Simple Case](./01-file-path-traversal-simple-case.md) |
-| 02 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – robots.txt Disclosure](./02-unprotected-admin-panel-robots-txt.md) |
-| 03 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – JS Disclosure](./03-unprotected-admin-panel-js-disclosure.md) |
-| 04 | Broken Access Control | PortSwigger Web Security Academy | [Broken Access Control – Forgeable Cookie](./04-broken-access-control-forgeable-cookie.md) |
+| 01 | Path Traversal | PortSwigger Web Security Academy | [File Path Traversal – Simple Case](./01-file-path-traversal-simple-case.md)
+| 02 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – robots.txt Disclosure](./02-unprotected-admin-panel-robots-txt.md) 
+| 03 | Broken Access Control | PortSwigger Web Security Academy | [Unprotected Admin Panel – JS Disclosure](./03-unprotected-admin-panel-js-disclosure.md) 
+| 04 | Broken Access Control | PortSwigger Web Security Academy | [Broken Access Control – Forgeable Cookie](./04-broken-access-control-forgeable-cookie.md) 
 | 05 | Authentication | PortSwigger Web Security Academy | [Username Enumeration + Brute Force](./05-username-enumeration-brute-force.md) 
 | 06 | Authentication | PortSwigger Web Security Academy | [2FA Bypass via Direct Navigation](./06-2fa-bypass-direct-navigation.md)
 | 07 | SSRF | PortSwigger Web Security Academy | [SSRF via Stock Check API](./07-ssrf-stock-check.md) 

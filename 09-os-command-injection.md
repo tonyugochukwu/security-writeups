@@ -23,7 +23,7 @@ Modified the parameter to:
 storeId=1| whoami
 ```
 
-![Screenshot: Burp view showing the modified storeId parameter and the response]()
+![Screenshot: Burp view showing the modified storeId parameter and the response](storeid.png)
 
 3. Observe the result
 The server's response included the output of the `whoami` command — the current user the server process was running as (e.g. `peter-13x7yv`) — in addition to (or instead of) the normal stock response. This confirmed the injected command had executed on the server's operating system.
@@ -31,7 +31,7 @@ The server's response included the output of the `whoami` command — the curren
 4. Confirm
 Lab marked as solved.
 
-![Screenshot: lab marked Solved]()
+![Screenshot: lab marked Solved](Screenshot-2026-10-13-154808.png)
 
  Root Cause
 The `storeId` parameter was intended only to identify which store to check stock for — a plain numeric value. Instead of validating or sanitizing this input, the server passed it directly into a system shell command used to perform the stock lookup. Because the pipe character (`|`) was not stripped or escaped, the shell interpreted the input as two separate, sequential commands: the intended stock lookup, and the injected `whoami` command. The shell executed both, and the output of the injected command was returned in the response.

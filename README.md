@@ -22,4 +22,6 @@ Tools Used
 | 06 | Authentication | PortSwigger Web Security Academy | [2FA Bypass via Direct Navigation](./06-2fa-bypass-direct-navigation.md)
 | 07 | SSRF | PortSwigger Web Security Academy | [SSRF via Stock Check API](./07-ssrf-stock-check.md) 
 | 08 | File Upload | PortSwigger Web Security Academy | [Remote Code Execution via Web Shell](./08-file-upload-web-shell.md) 
+| 09 | OS Command Injection | PortSwigger Web Security Academy | [Command Injection via Stock Check](./09-os-command-injection.md)
+| 10 | SQL Injection | PortSwigger Web Security Academy | [Authentication Bypass via Comment Injection](./10-sqli-authentication-bypass.md)
 
